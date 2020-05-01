@@ -7,7 +7,7 @@
     <!-- Creating Beans -->
     <bean id="numberGeneratorBean" class="academy.learnprogramming.NumberGeneratorImpl"/>
 
-    <bean id="gameBean" class="academy.learnprogramming.GameImpl">
+    <bean id="gameBean" class="academy.learnprogramming.GameImpl" init-method="reset">
         <property name="numberGenerator" ref="numberGeneratorBean"/>
     </bean>
 

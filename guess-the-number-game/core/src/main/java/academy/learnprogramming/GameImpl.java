@@ -20,6 +20,7 @@ public class GameImpl implements Game {
 
     // == public methods ==
 
+    // setter injection dependency
     public void setNumberGenerator(NumberGenerator numberGenerator) {
         this.numberGenerator = numberGenerator;
     }
