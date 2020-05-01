@@ -19,7 +19,7 @@ public class Main {
                 = new ClassPathXmlApplicationContext(CONFIG_LOCATION);
 
         // get number generator bean from context (container)
-        NumberGenerator numberGenerator = context.getBean("numberGenerator", NumberGenerator.class);
+        NumberGenerator numberGenerator = context.getBean("numberGeneratorBean", NumberGenerator.class);
 
         // call method next() to get a random number
         int number = numberGenerator.next();
