@@ -7,9 +7,11 @@
     <!-- Creating Beans -->
     <bean id="numberGeneratorBean" class="academy.learnprogramming.NumberGeneratorImpl"/>
 
-    <bean id="gameBean" class="academy.learnprogramming.GameImpl" init-method="reset">
+    <bean id="gameBean" class="academy.learnprogramming.GameImpl">
         <property name="numberGenerator" ref="numberGeneratorBean"/>
     </bean>
+
+    <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"/>
 
 </beans>
 
