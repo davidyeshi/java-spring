@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.annotation.PostConstruct;
 
-public class MessageGeneratorImpl {
+public class MessageGeneratorImpl implements MessageGenerator{
     // == constants ==
     private static final Logger logger = LoggerFactory.getLogger("MessageGeneratorImpl");
 
@@ -18,5 +18,15 @@ public class MessageGeneratorImpl {
     @PostConstruct
     public void postContruct() {
         logger.info("in MessageGeneratorImpl.postConstruct()");
+    }
+
+    @Override
+    public String getMainMessage() {
+        return "Main Message";
+    }
+
+    @Override
+    public String getResultMessage() {
+        return "Result Message";
     }
 }
