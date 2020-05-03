@@ -37,6 +37,7 @@ public class Main {
 
         // Testing Git push to different branch from current branch
         log.info("Testing Git");
+        log.info("Another Git Testing");
 
         // close context (container)
         context.close();
