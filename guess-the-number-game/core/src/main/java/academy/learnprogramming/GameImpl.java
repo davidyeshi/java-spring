@@ -33,6 +33,7 @@ public class GameImpl implements Game {
         biggest = numberGenerator.getMaxNumber();
         number = numberGenerator.next();
         log.debug("The number is {}", number);
+        log.info("in Game reset()");
     }
 
     @PreDestroy

@@ -8,11 +8,7 @@
         http://www.springframework.org/schema/context/spring-context.xsd">
 
     <!-- Creating Beans -->
-    <context:annotation-config/>
-    <bean id="numberGeneratorBean" class="academy.learnprogramming.NumberGeneratorImpl"/>
-
-    <bean id="gameBean" class="academy.learnprogramming.GameImpl">
-    </bean>
+    <context:component-scan base-package="academy.learnprogramming"/>
 
 </beans>
 
