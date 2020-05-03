@@ -26,18 +26,11 @@ public class Main {
         // parameterized logging
         log.info("number = {}", number);
 
-        // get game bean from context (container)
-        Game game = context.getBean(Game.class);
-
         // get the messageGenerator bean from context (spring container)
         MessageGenerator messageGenerator = context.getBean(MessageGenerator.class);
 
         log.info(messageGenerator.getMainMessage());
         log.info(messageGenerator.getResultMessage());
-
-        // Testing Git push to different branch from current branch
-        log.info("Testing Git");
-        log.info("Another Git Testing");
 
         // close context (container)
         context.close();

@@ -10,16 +10,18 @@ public class MessageGeneratorImpl implements MessageGenerator{
     // == constants ==
     private static final Logger logger = LoggerFactory.getLogger("MessageGeneratorImpl");
 
+    // == fields ==
     @Autowired
     private Game game;
     private int guessCount = 10;
 
-    // == public methods ==
+    // == init methods ==
     @PostConstruct
     public void postContruct() {
-        logger.info("in MessageGeneratorImpl.postConstruct()");
+        logger.info("in MessageGeneratorImpl.postConstruct() {}", game);
     }
 
+    // == public methods ==
     @Override
     public String getMainMessage() {
         return "Main Message";
