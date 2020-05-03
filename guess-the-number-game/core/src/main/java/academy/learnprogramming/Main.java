@@ -35,6 +35,9 @@ public class Main {
         log.info(messageGenerator.getMainMessage());
         log.info(messageGenerator.getResultMessage());
 
+        // Testing Git push to different branch from current branch
+        log.info("Testing Git");
+
         // close context (container)
         context.close();
     }
