@@ -3,6 +3,7 @@ package academy.learnprogramming.console;
 import academy.learnprogramming.config.AppConfig;
 import academy.learnprogramming.MessageGenerator;
 import academy.learnprogramming.NumberGenerator;
+import academy.learnprogramming.config.GameConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -17,7 +18,7 @@ public class Main {
 
         // create context (container)
         ConfigurableApplicationContext context
-                = new AnnotationConfigApplicationContext(AppConfig.class);
+                = new AnnotationConfigApplicationContext(GameConfig.class);
 
         // close context (container)
         context.close();
