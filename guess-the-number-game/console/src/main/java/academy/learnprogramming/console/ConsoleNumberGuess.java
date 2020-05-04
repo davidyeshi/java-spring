@@ -19,11 +19,16 @@ public class ConsoleNumberGuess {
     private static final Logger logger = LoggerFactory.getLogger(ConsoleNumberGuess.class);
 
     // == fields ==
-    @Autowired
     private Game game;
 
-    @Autowired
     private MessageGenerator messageGenerator;
+
+    // == constructors ==
+    @Autowired
+    public ConsoleNumberGuess(Game game, MessageGenerator messageGenerator) {
+        this.game = game;
+        this.messageGenerator = messageGenerator;
+    }
 
     // == events ==
     // Once the Spring container is ready for use, it will fire this event automatically
