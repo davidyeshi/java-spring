@@ -19,21 +19,6 @@ public class Main {
         ConfigurableApplicationContext context
                 = new AnnotationConfigApplicationContext(AppConfig.class);
 
-        // get number generator bean from context (container)
-        NumberGenerator numberGenerator = context.getBean(NumberGenerator.class);
-
-        // call method next() to get a random number
-        int number = numberGenerator.next();
-
-        // parameterized logging
-        log.info("number = {}", number);
-
-        // get the messageGenerator bean from context (spring container)
-        MessageGenerator messageGenerator = context.getBean(MessageGenerator.class);
-
-        log.info(messageGenerator.getMainMessage());
-        log.info(messageGenerator.getResultMessage());
-
         // close context (container)
         context.close();
     }
