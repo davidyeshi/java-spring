@@ -11,13 +11,4 @@ import org.springframework.context.annotation.Import;
 @ComponentScan(basePackages = "academy.learnprogramming")
 public class AppConfig {
 
-    @Bean
-    public Game game() {
-        return new GameImpl();
-    }
-
-    @Bean
-    public MessageGenerator messageGenerator() {
-        return new MessageGeneratorImpl();
-    }
 }
