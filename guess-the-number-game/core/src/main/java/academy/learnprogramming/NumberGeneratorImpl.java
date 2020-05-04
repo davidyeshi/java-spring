@@ -14,6 +14,10 @@ public class NumberGeneratorImpl implements NumberGenerator {
     @MaxNumber
     private int maxNumber;
 
+    @Autowired
+    @MinNumber
+    private int minNumber;
+
     // == public methods ==
     @Override
     public int next() {
@@ -24,4 +28,11 @@ public class NumberGeneratorImpl implements NumberGenerator {
     public int getMaxNumber() {
         return maxNumber;
     }
+
+    @Override
+    public int getMinNumber() {
+        return minNumber;
+    }
+
+
 }
