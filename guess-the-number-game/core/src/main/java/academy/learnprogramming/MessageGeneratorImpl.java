@@ -22,7 +22,7 @@ public class MessageGeneratorImpl implements MessageGenerator{
     // == init methods ==
     @PostConstruct
     public void postContruct() {
-        log.info("in MessageGeneratorImpl.postConstruct() {}", game);
+        logger.info("in MessageGeneratorImpl.postConstruct() {}", game);
     }
 
     // == public methods ==
