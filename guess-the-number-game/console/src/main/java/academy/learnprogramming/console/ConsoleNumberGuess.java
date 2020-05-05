@@ -2,10 +2,8 @@ package academy.learnprogramming.console;
 
 import academy.learnprogramming.Game;
 import academy.learnprogramming.MessageGenerator;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Component;
@@ -13,10 +11,8 @@ import org.springframework.stereotype.Component;
 import java.util.Scanner;
 
 @Component
+@Slf4j
 public class ConsoleNumberGuess {
-
-    // == constants ==
-    private static final Logger logger = LoggerFactory.getLogger(ConsoleNumberGuess.class);
 
     // == fields ==
     private Game game;
@@ -34,7 +30,7 @@ public class ConsoleNumberGuess {
     // Once the Spring container is ready for use, it will fire this event automatically
     @EventListener
     public void start(ContextRefreshedEvent contextRefreshedEvent) {
-        logger.info("start() --> Container ready for use.");
+        log.info("start() --> Container ready for use.");
 
         Scanner scanner = new Scanner(System.in);
 
