@@ -1,6 +1,5 @@
-package academy.learnprogramming;
+package academy.learnprogramming.service;
 
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 @Service
