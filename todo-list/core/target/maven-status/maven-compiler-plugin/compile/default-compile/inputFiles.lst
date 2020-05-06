@@ -1,5 +1,10 @@
 /home/yeshi/Desktop/java/java-spring/todo-list/core/src/main/java/academy/learnprogramming/service/DemoService.java
+/home/yeshi/Desktop/java/java-spring/todo-list/core/src/main/java/academy/learnprogramming/util/ViewNames.java
+/home/yeshi/Desktop/java/java-spring/todo-list/core/src/main/java/academy/learnprogramming/util/Mappings.java
 /home/yeshi/Desktop/java/java-spring/todo-list/core/src/main/java/academy/learnprogramming/config/WebAppInitializer.java
 /home/yeshi/Desktop/java/java-spring/todo-list/core/src/main/java/academy/learnprogramming/service/DemoServiceImpl.java
 /home/yeshi/Desktop/java/java-spring/todo-list/core/src/main/java/academy/learnprogramming/config/WebConfig.java
+/home/yeshi/Desktop/java/java-spring/todo-list/core/src/main/java/academy/learnprogramming/controller/TodoItemController.java
+/home/yeshi/Desktop/java/java-spring/todo-list/core/src/main/java/academy/learnprogramming/model/TodoData.java
 /home/yeshi/Desktop/java/java-spring/todo-list/core/src/main/java/academy/learnprogramming/controller/DemoController.java
+/home/yeshi/Desktop/java/java-spring/todo-list/core/src/main/java/academy/learnprogramming/model/TodoItem.java
