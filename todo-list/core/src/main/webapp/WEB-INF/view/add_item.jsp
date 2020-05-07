@@ -35,10 +35,10 @@
                     </tr>
 
                     <tr>
-                        <td><input type="submit" value="SUBMIT"/></td>
+                        <td><input type="submit" value="Submit"/></td>
                     </tr>
                 </table>
-            </form>
+            </form:form>
         </div>
     </body>
 </html>
