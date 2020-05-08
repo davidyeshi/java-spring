@@ -78,4 +78,12 @@ public class TodoItemController {
         return "redirect:/" + Mappings.ITEMS;
     }
 
+    @GetMapping(Mappings.VIEW_ITEM)
+    public String viewItem(@RequestParam int id, Model model) {
+        log.info("--> viewItem()");
+        log.info("Viewing item with id = {}", id);
+        model.addAttribute(AttributeNames.TODO_ITEM, todoItemService.getItem(id));
+
+        return ViewNames.VIEW_ITEM;
+    }
 }

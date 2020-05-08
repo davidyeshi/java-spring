@@ -1,43 +1,40 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
-<%@ page import="academy.learnprogramming.util.AttributeNames"%>
+<%@ page import="academy.learnprogramming.util.Mappings"%>
 <html>
     <head>
         <title>View Item</title>
     </head>
     <body>
         <div align="center">
-                <table>
-                    <tr>
-                        <td><label>ID</label></td>
-                        <td>
-                            <form:input path="id" disabled="true"/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><label>Title</label></td>
-                        <td>
-                            <form:input path="title" disabled="true"/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><label>Deadline</label></td>
-                        <td>
-                            <form:input path="deadline" disabled="true"/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><label>Details</label></td>
-                        <td>
-                            <form:textarea path="details" disabled="true"/>
-                        </td>
-                    </tr>
-                    <c:url var="itemsListUrl" value="${Mappings.ITEMS}"/>
+            <table>
+                <tr>
+                    <td><label>ID</label></td>
+                    <td>
+                        <c:out value="${todoItem.id}"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Title</label></td>
+                    <td>
+                        <c:out value="${todoItem.title}"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Deadline</label></td>
+                    <td>
+                        <c:out value="${todoItem.deadline}"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Details</label></td>
+                    <td>
+                        <c:out value="${todoItem.details}"/>
+                    </td>
+                </tr>
+            </table>
 
-                    <tr>
-                        <td><input type="submit" href="${itemsListUrl}" value="Items List"/></td>
-                    </tr>
-                </table>
+            <c:url var="tableUrl" value="${Mappings.ITEMS}"/>
+            <a href="${tableUrl}">Show Table</a>
         </div>
     </body>
 </html>
