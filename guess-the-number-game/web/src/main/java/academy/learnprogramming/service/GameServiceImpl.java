@@ -27,8 +27,8 @@ public class GameServiceImpl implements GameService{
     @PostConstruct
     public void postContruct() {
         log.info("In GameServiceImpl postConstruct()");
-        log.info(messageGenerator.getMainMessage());
-        log.info("Number to guess: {}", game.getNumber());
+        log.info("number = {}", game.getNumber());
+        log.info("mainMessage = {}",messageGenerator.getMainMessage());
     }
 
     // == public methods ==
