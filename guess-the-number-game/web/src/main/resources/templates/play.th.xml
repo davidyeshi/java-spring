@@ -1,0 +1,5 @@
+<thlogic>
+    <attr   cell = "#headId"
+            th:replace="~{fragments/head :: headFragment}"/>
+
+</thlogic>
